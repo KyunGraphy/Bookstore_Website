@@ -132,6 +132,46 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 | TOSHIBA Dynabook | 1 | Personal Laptop | Web developing System server | 20.000.000 VNĐ | 20.000.000 VNĐ | 30/4/2022 |
 | MSI GF65 | 1 | Personal Laptop | Web developing System server | 27.000.000 VNĐ | 27.000.000 VNĐ | 30/4/2022 |
 
+<h5 id="software">Software Resources</h5>
+
+| Application | Quantity | Description | Purpose | Price | Total Cost | Date needed |
+| --- | --- | --- | --- | --- | --- | --- |
+| MS Windows 10 Pro 64bit | 1 | Operating System | PC’s OS | Free | Free | 30/4/2022 |
+| Visual Studio Code, MySQL Workbench. | 3 each |  Development tools | Website developing and Database | Free | Free | 30/4/2022 |
+| MS Windows 11 Pro 64bit | 2 | Operating System | PC’s OS | Free | Free | 30/4/2022 |
+
+<h5 id="human">Human Resources</h5>
+
+| Name | Name of Organization | Project Role | Required Skills | Phone | Email | Salary/month |
+| --- | --- | --- | --- | --- | --- | --- |
+| Trần Văn Tiến | International University - Ho Chi Minh National University - HCMC | Developer | - Good knowledge of programming language - Work on schedule | 0969141776 | tien04100@gmail.com | None |
+
+Trần Trung Kiên
+International University - Ho Chi Minh National University - HCMC
+Developer
++ Good knowledge of programming language
++ Work on schedule
+ 
+0933592344
+kientrung1388@gmail.com
+None
+Hoàng Trung Phong
+International University - Ho Chi Minh National University - HCMC
+Developer
++ Good knowledge of programming language
++ Work on schedule
+ 
+0928430492
+hoangphong942001@gmail.com
+None
+
+
+
+
+
+
+
+
 
 
 
