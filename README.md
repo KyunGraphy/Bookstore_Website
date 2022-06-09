@@ -107,7 +107,7 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 | 016 | Edit products list | Allow admin to update product list (add/ delete). | Functional Requirement |
 | 017 | Log out | Allow users to log out. | Functional Requirement |
 | 018 | Data requirement | The critical data must be in an available format like password must be at least 8 characters or user mail is required. | Non-functional requirement |
-| 019 | Usability | Requirements | The interface is easy to learn and navigate; buttons, headings, and help/error messages are simple to understand. | Non-functional requirement |
+| 019 | Usability Requirements | The interface is easy to learn and navigate; buttons, headings, and help/error messages are simple to understand. | Non-functional requirement |
 | 020 | Performance Requirements | The website should run smoothly, even under a heavy number of users for a period of time. | Non-functional requirement |
 | 021 | Extensibility requirement | The system is able to update without changing the database. | Non-functional requirement |
 | 022 | Security Requirement | The integrity of the customer account information must be ensured by the software. | Non-functional requirement |
