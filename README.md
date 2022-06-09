@@ -19,6 +19,10 @@
     * [Section 2: MySQL Workbench]
     * [Section 3: Apache Tomcat and JSP]
 
+    ![This is an image](https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/279206745_1660703434294469_3199708892001852185_n.jpg?stp=dst-jpg_p160x160&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=HwghNOri1fcAX9bVisi&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT8h-DzwpNNBY_LHxrK4dqAWOHTO9jmLcOWBZK-PTXc7pA&oe=62A673C0)
+
+
+
 
     
 <h2 id="project-description">Project Description</h2>
