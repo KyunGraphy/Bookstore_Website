@@ -87,10 +87,9 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 <h3 id="requirement-analysis">Requirement Analysis</h3>
 <h4 id="functional">Functional and Non – Functional requirements</h4>
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |                          
+| Req.ID | Requirement Name | Detailed Description | Type |
+| --- | --- | --- | --- |
+| 001 | Register an account | If the user doesn’t have an account, then he will be asked to register. | Functional requirement |                          
 
 
 
