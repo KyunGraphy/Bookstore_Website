@@ -148,6 +148,51 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 | Trần Trung Kiên | International University - Ho Chi Minh National University - HCMC | Developer | - Good knowledge of programming language - Work on schedule | 0933592344 | kientrung1388@gmail.com | None |
 | Hoàng Trung Phong | International University - Ho Chi Minh National University - HCMC | Developer | - Good knowledge of programming language - Work on schedule | 0928430492 | hoangphong942001@gmail.com | None |
 
+<h3 id="system-architecture">System Architecture</h3>
+<h4 id="use-case">Use Case Diagram</h4>
+
+<h4 id="use-case-des">Use Case Description</h4>
+
+<h4 id="activity">Activity Diagram</h4>
+
+<h4 id="class">Class Diagram</h4>
+
+<h4 id="sequence">Sequence Diagram</h4>
+
+<h4 id="sequence-overall">Sequence Diagram overall</h4>
+
+<h3 id="implementation">Implementation</h3>
+<h4 id="model-processing-model">Software Processing Model</h4>
+- While working on this project, our team employs the Agile model. The agile process model is a software development approach that is iterative in nature. We divided our project into smaller sprints using the Agile method: Account Sprint, User Sprint, Admin Sprint, and Driver Sprint. In the Account sprint, we continue to divide this sprint into many tasks such as sign in, sign up, forget password, etc. Each sprint lasts 1-2 weeks and includes six iterative phases: requirement, design, development, testing, deployment, and review. The division of the entire project into minor parts aids in the reduction of project risk and the overall project delivery time requirement. All members work on each sprint together; after running small test cases for each sprint, we quickly implement it again so that it does not interfere with other phases. - The agile model allows us to save time by improving our code, adding more features, or removing them.
+
+<h4 id="execution">Execution</h4>
+
+<h3 id="testing">Testing</h3>
+In this chapter, we are using the template in the lab session to test all functions in our projects to make sure that all functions run smoothly.
+We have recorded testing process:
+<h3 id="conclusion">Conclusion</h3>
+###Accomplished Works
+By the end of the project, the website can perform the following tasks:
+- The system allows Users to authenticate accounts. 
+- The system allows Users to view their personal information. 
+- The system allows Users to use password recovery. 
+- The system allows Users to view, purchase  their cart
+- The system allows Users to make a wishlist
+- The system allows Admin to add new products. 
+ 
+###Future Application
+Future work will entail building the remaining planned features in order to have a fully functional version of the web application. These features are: 
+- Allowing users to add media to their profiles allows them to further personalize their profiles. 
+- Implementing the sponsors' dashboard for managing their campaigns through room clustering and connecting. 
+- App development for applications such as the Apple iPhone, iPad and Windows Phone App distribution via digital distribution networks such as Google Play and the iOS App Store. 
+- The use of semantic web technologies to define relationships in a social network.
+
+<h3 id="references">References</h3>
+
+
+
+
+
 
 
 
