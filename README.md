@@ -103,6 +103,37 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 | 012 | Check completed transaction | Customer is allowed to review their completed transaction by using this function. |Functional Requirement |
 | 013 | Print out bill | Customers can print out the bill after the payment process finishes. | Functional Requirement |
 | 014 | Comment | Customers can leave their comment. | Functional Requirement |
+| 015 | Update product | Allow the admin account to update product information. | Functional Requirement |
+| 016 | Edit products list | Allow admin to update product list (add/ delete). | Functional Requirement |
+| 017 | Log out | Allow users to log out. | Functional Requirement |
+| 018 | Data requirement | The critical data must be in an available format like password must be at least 8 characters or user mail is required. | Non-functional requirement |
+| 019 | Usability | Requirements | The interface is easy to learn and navigate; buttons, headings, and help/error messages are simple to understand. | Non-functional requirement |
+| 020 | Performance Requirements | The website should run smoothly, even under a heavy number of users for a period of time. | Non-functional requirement |
+| 021 | Extensibility requirement | The system is able to update without changing the database. | Non-functional requirement |
+| 022 | Security Requirement | The integrity of the customer account information must be ensured by the software. | Non-functional requirement |
+| 023 | Security Requirement | Failure to log in to the website should be required to access again. | Non-functional requirement |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
