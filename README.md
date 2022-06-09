@@ -86,10 +86,11 @@ Node.js has a unique advantage because millions of frontend developers that writ
 Handlebars.js is a templating engine similar to the ejs module in node.js, but more powerful and simple to use. It ensures minimum templating and is a logicless engine that keeps the view and the code separated. It can be used with express as the hbs module, available through npm. HandleBars can be used to render web pages to the client side from data on the server-side.
 <h3 id="requirement-analysis">Requirement Analysis</h3>
 <h4 id="functional">Functional and Non – Functional requirements</h4>
-| Req.ID | Requirement Name | Detailed Description | Type |
-| ---- | ---- | ---- | ---- |
-| 001 | Register an account | If the user doesn’t have an account then he will be asked to register | Functional requirement |
-| Bob | Test2 | Toronto | 13 |                          
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |                          
 
 
 
