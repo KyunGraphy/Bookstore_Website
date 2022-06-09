@@ -14,10 +14,10 @@
         * [Content](#Project Overview)
         * [Motivation](#Project Overview)
         * [Object](#Project Overview)
-*[Technology]
-    *[Section 1: HTML/CSS]	
-    *[Section 2: MySQL Workbench]
-    *[Section 3: Apache Tomcat and JSP]
+* [Technology]
+    * [Section 1: HTML/CSS]	
+    * [Section 2: MySQL Workbench]
+    * [Section 3: Apache Tomcat and JSP]
 
 
     
