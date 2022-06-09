@@ -172,7 +172,7 @@ In this chapter, we are using the template in the lab session to test all functi
 We have recorded testing process:
 <h3 id="conclusion">Conclusion</h3>
 
-### Accomplished Works
+##### Accomplished Works
 By the end of the project, the website can perform the following tasks:
 - The system allows Users to authenticate accounts. 
 - The system allows Users to view their personal information. 
@@ -180,7 +180,7 @@ By the end of the project, the website can perform the following tasks:
 - The system allows Users to view, purchase  their cart
 - The system allows Users to make a wishlist
 - The system allows Admin to add new products. 
-### Future Application
+##### Future Application
 Future work will entail building the remaining planned features in order to have a fully functional version of the web application. These features are: 
 - Allowing users to add media to their profiles allows them to further personalize their profiles. 
 - Implementing the sponsors' dashboard for managing their campaigns through room clustering and connecting. 
