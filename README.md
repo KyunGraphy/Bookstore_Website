@@ -86,6 +86,7 @@ Node.js has a unique advantage because millions of frontend developers that writ
 Handlebars.js is a templating engine similar to the ejs module in node.js, but more powerful and simple to use. It ensures minimum templating and is a logicless engine that keeps the view and the code separated. It can be used with express as the hbs module, available through npm. HandleBars can be used to render web pages to the client side from data on the server-side.
 <h3 id="requirement-analysis">Requirement Analysis</h3>
 <h4 id="functional">Functional and Non – Functional requirements</h4>
+
 | Req.ID | Requirement Name | Detailed Description | Type |
 | --- | --- | --- | --- |
 | 001 | Register an account | If the user doesn’t have an account, then he will be asked to register. | Functional requirement |  
@@ -110,7 +111,7 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 | 020 | Performance Requirements | The website should run smoothly, even under a heavy number of users for a period of time. | Non-functional requirement |
 | 021 | Extensibility requirement | The system is able to update without changing the database. | Non-functional requirement |
 | 022 | Security Requirement | The integrity of the customer account information must be ensured by the software. | Non-functional requirement |
-| 023 | Security Requirement | Failure to log in to the website should be required to access again. | Non-functional requirement | 
+| 023 | Security Requirement | Failure to log in to the website should be required to access again. | Non-functional requirement |
 <!-- <h4 id="risk-register">Risk Register</h4>
 | Risk ID | Risk Category | Risk Title | Affect | Probability | Impact | Risk response plan |
 | --- | --- | --- | --- | --- | --- | --- | -->
