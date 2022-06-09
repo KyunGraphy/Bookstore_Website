@@ -42,3 +42,8 @@
 
 
 <h2 id="project-description">Project Description</h2>
+<h3 id="project-overview">Project Overview</h3>
+
+- Personalizing your expertise has become the newest slogan of all school giants. There are many online bookstores like Powell’s, Amazon which were designed using Html. With the intention of making our own bookstores website,  we develop a similar one using NodeJS, MYSQL Workbench.
+
+- Online Book store is an online web application where the customer can purchase books online. In the web browser, the customers can search for a book by its respective categories which based on subject Author, Title, Price, etc., later can add to the shopping cart and finally purchase using credit card transaction. The user can login using his account details or new customers can set up an account very quickly. They should give the details of their name, contact number and shipping address. 
