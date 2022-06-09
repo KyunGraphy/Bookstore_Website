@@ -88,8 +88,8 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 <h4 id="functional">Functional and Non – Functional requirements</h4>
 | Req.ID | Requirement Name | Detailed Description | Type |
 | ---- | ---- | ---- | ---- |
-| 001 | Register an account | If the user doesn’t have an account then he will be asked to register| Functional requirement |
-| Bob        | Test2              | Toronto | 13 |                          
+| 001 | Register an account | If the user doesn’t have an account then he will be asked to register | Functional requirement |
+| Bob | Test2 | Toronto | 13 |                          
 
 
 
