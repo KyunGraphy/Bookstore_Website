@@ -145,25 +145,8 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 | Name | Name of Organization | Project Role | Required Skills | Phone | Email | Salary/month |
 | --- | --- | --- | --- | --- | --- | --- |
 | Trần Văn Tiến | International University - Ho Chi Minh National University - HCMC | Developer | - Good knowledge of programming language - Work on schedule | 0969141776 | tien04100@gmail.com | None |
-
-Trần Trung Kiên
-International University - Ho Chi Minh National University - HCMC
-Developer
-+ Good knowledge of programming language
-+ Work on schedule
- 
-0933592344
-kientrung1388@gmail.com
-None
-Hoàng Trung Phong
-International University - Ho Chi Minh National University - HCMC
-Developer
-+ Good knowledge of programming language
-+ Work on schedule
- 
-0928430492
-hoangphong942001@gmail.com
-None
+| Trần Trung Kiên | International University - Ho Chi Minh National University - HCMC | Developer | - Good knowledge of programming language - Work on schedule | 0933592344 | kientrung1388@gmail.com | None |
+| Hoàng Trung Phong | International University - Ho Chi Minh National University - HCMC | Developer | - Good knowledge of programming language - Work on schedule | 0928430492 | hoangphong942001@gmail.com | None |
 
 
 
