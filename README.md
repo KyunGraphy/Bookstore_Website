@@ -59,12 +59,12 @@ using a database.
 The goal is to create an application that will allow you to be apart from standing in line and waiting for a store clerk to eventually check out your products. Online purchases are completed promptly, giving you more time to complete other chores! Furthermore, unlike at a store, courteous customer service experts are accessible 24 hours a day, seven days a week to assist you with locating, purchasing, and delivering your product.
 The major goal is to create a bookshop where consumers can come at any time of day from anywhere and examine the available books, pick any of them, and purchase by paying online or by cash on delivery. The administrator will regularly add any new books available to them for sale. The administrator will take books from the reputed publishers and vendors only.
 <h4 id="scope">Scope</h4>
--Understand and prepare detailed requirement and specifications
--Prepare high level and detailed design specifications of the system
--Prepare Test Plan and Test cases
--Develop the system and coding
--Perform unit testing, integration and system testing
--Demonstrate a bug free application after suitable modification if needed.
+- Understand and prepare detailed requirement and specifications
+- Prepare high level and detailed design specifications of the system
+- Prepare Test Plan and Test cases
+- Develop the system and coding
+- Perform unit testing, integration and system testing
+- Demonstrate a bug free application after suitable modification if needed.
 <h3 id="technology">Technology</h3>
 <h4 id="html-css">HTML/CSS</h4>
 <h5>HTML</h5>
@@ -117,6 +117,47 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 
 | Risk ID | Risk Category | Risk Title | Affect | Probability | Impact | Risk response plan |
 | --- | --- | --- | --- | --- | --- | --- |
+| 001 | HR | Member’s lack of team corporation, or weak participation | This can slow down the progress of the project, produce unreliable results from the uncooperative work | Medium | High | Organize team members so that they can easily get along with each other. Solve all the conflicts that are existing among the team members |
+| 002 | Requirements | Additional requirements are added | It affects the project progress | High | Medium | Hold a meeting to update the schedule and plan |
+|  | Requirements | Wrong requirements | It affects the project progress | Medium | High | Clarify all about the project’s requirements, and fix it |
+| 003 | Organization and Management | The project is running over the budget | The project has to be stopped if the team ran out of the budget | Medium | High |The Project Manager must propose a new saving plan or financial management |
+| 004 | Schedule | The lack of time due to the inappropriate plan | The project will meet the deadline without finishing | High | Medium | Make a suitable plan to finish the project with the time left |
+
+<h4 id="resource-requirement">Resource Requirement</h4>
+<h5 id="hardware">Hardware Resources</h5>
+
+| Items | Quantity | Description | Purpose | Price | Total Cost | Date needed |
+| --- | --- | --- | --- | --- | --- | --- |
+| MSI GF63 | 1 | Personal Laptop | Web developing System server | 23.000.000 VNĐ | 23.000.000 VNĐ | 30/4/2022 |
+| TOSHIBA Dynabook | 1 | Personal Laptop | Web developing System server | 20.000.000 VNĐ | 20.000.000 VNĐ | 30/4/2022 |
+| MSI GF65 | 1 | Personal Laptop | Web developing System server | 27.000.000 VNĐ | 27.000.000 VNĐ | 30/4/2022 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
