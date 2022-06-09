@@ -89,7 +89,46 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 
 | Req.ID | Requirement Name | Detailed Description | Type |
 | --- | --- | --- | --- |
-| 001 | Register an account | If the user doesn’t have an account, then he will be asked to register. | Functional requirement |                          
+| 001 | Register an account | If the user doesn’t have an account, then he will be asked to register. | Functional requirement |  
+| 002 | Log in | If the customer or manager already had an account, they can log in. | Functional Requirement |
+| 003 | Change password | Allow users  to change their password. | Functional Requirement |
+| 004 | Categories | Allow customers to view all the products that are the same type or from a brand. | Functional Requirement | 
+| 005 | Filter by products | Allow customers to search for products by keyword. | Functional Requirement |
+| 006 | WishLists | Allow customers to add the products that will be released soon or wait to restock. | Functional Requirement |
+| 007 | View products information | Allow customers to view the product information like size, brand, etc. | Functional Requirement |
+| 008 | Payment | Customers can pay for their services through this function. | Functional Requirement |
+| 009 | Edit details | Allow users to edit their personal information. | Functional Requirement |
+| 010 | Cart | Allow customers to add all products that they want to buy into the cart. | Functional Requirement |
+| 011 | View cart | Allow customers to view their cart. | Functional Requirement |
+| 012 | Check completed transaction | Customer is allowed to review their completed transaction by using this function. |Functional Requirement |
+| 013 | Print out bill | Customers can print out the bill after the payment process finishes. | Functional Requirement |
+| 014 | Comment | Customers can leave their comment. | Functional Requirement |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
