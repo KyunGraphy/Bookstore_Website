@@ -8,21 +8,37 @@
 - [Hoang Trung Phong - ITITIU19179](https://www.facebook.com/hoang.trungphong.94)
 
 # Table of Contents:
-* [Project Description](#project-description)
-    * [Project Overview](#Project Overview)
-    * [The Purpose of the Project](#Project Overview)
-        * [Content](#Project Overview)
-        * [Motivation](#Project Overview)
-        * [Object](#Project Overview)
-* [Technology]
-    * [Section 1: HTML/CSS]	
-    * [Section 2: MySQL Workbench]
-    * [Section 3: Apache Tomcat and JSP]
+* [Chapter I:Project Description](#project-description)
+    * [Project Overview](#project-overview)
+    * [The Purpose of the Project](#purpose)
+        * [Motivation](#motivation)
+        * [Objection](#objection)
+        * [Scope](#scope)
+* [Chapter II:Technology](#technology)
+    * [Section 1: HTML/CSS](#html-css)	
+    * [Section 2: MySQL Workbench](#MySQL)
+    * [Section 3: JavaScript](#javascript)
+    * [Section 4: Node & ExpressJS](#node-expressjs)
+* [Chapter III: Requirement Analysis](#requirement-analysis)
+    * [Section 1: Functional and Non – Functional requirements](#functional)
+    * [Section 2: Risk Register](#risk-register)
+    * [Section 3: Resource Requirement](#resource-requirement)
+        * [Section 3.1: Hardware Resources](#hardware)
+        * [Section 3.2: Software Resources](#software)
+        * [Section 3.3: Human Resources](#human)
+* [Chapter IV: System Architecture](#system-architecture)
+    * [Section 1: Use Case Diagram](#use-case)
+    * [Section 2: Use Case Description](#use-case-des)
+    * [Section 3: Activity Diagram](#activity)
+    * [Section 4: Class Diagram](#class)
+    * [Section 5: Sequence Diagram](#sequence)
+    * [Section 6: Sequence Diagram overall](#sequence-overall)
+* [Chapter V: Implementation](#implementation)
+    * [Section 1: Software Processing Model](#model-processing-model)
+    * [Section 2: Execution](#execution)
+* [Chapter VI: Testing](#testing)
+* [Chapter VII: Conclusion](#conclusion)
+* [Chapter VIII: References](#references)
 
-    ![This is an image](https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/279206745_1660703434294469_3199708892001852185_n.jpg?stp=dst-jpg_p160x160&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=HwghNOri1fcAX9bVisi&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT8h-DzwpNNBY_LHxrK4dqAWOHTO9jmLcOWBZK-PTXc7pA&oe=62A673C0)
 
-
-
-
-    
 <h2 id="project-description">Project Description</h2>
