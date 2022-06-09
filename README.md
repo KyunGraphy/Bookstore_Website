@@ -113,7 +113,7 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 | 023 | Security Requirement | Failure to log in to the website should be required to access again. | Non-functional requirement |
 <h4 id="risk-register">Risk Register</h4>
 | Risk ID | Risk Category | Risk Title | Affect | Probability | Impact | Risk response plan |
-| --- | --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- | --- | --- | --- | --- |
 
 
 
