@@ -243,7 +243,7 @@ route.get("/contact", async function (req, res) {
   });
 });
 
-route.post("/products", async function (req, res) {
+route.post("/customFilter", async function (req, res) {
     // Filter products
     const proList = await db.load(`SELECT * FROM books.book where sellPrice >= ${req.body.minPrice} and sellPrice <= ${req.body.maxPrice};`)
 

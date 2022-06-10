@@ -20,7 +20,7 @@ route.use(topSeller)
 route.get("/", async function (req, res) {
   res.render("homeAdmin", {
     layout: "adminLay",
-    title: "Home",
+    title: "HOME",
     topSeller : req.topSeller,
     name : req.session.userName.toUpperCase(),
     userSession : req.session.userSession
@@ -34,7 +34,7 @@ route.get("/products", async function (req, res) {
     const proList = await db.load(`SELECT * FROM books.book WHERE category = '${req.query.cate}';`)
     res.render("vwAdmin/products_admin", {
       layout: "adminLay",
-      title: "Products",
+      title: "PRODUCTS",
       proList,
       topSeller : req.topSeller,
       name : req.session.userName.toUpperCase(),
@@ -44,7 +44,7 @@ route.get("/products", async function (req, res) {
     const proList = await db.load(`SELECT * FROM books.book WHERE book.title LIKE '%${req.query.itemSearch}%';`)
     res.render("vwAdmin/products_admin", {
       layout: "adminLay",
-      title: "Products",
+      title: "PRODUCTS",
       proList,
       topSeller : req.topSeller,
       name : req.session.userName.toUpperCase(),
@@ -54,7 +54,7 @@ route.get("/products", async function (req, res) {
     const proList = await db.load(`SELECT * FROM books.book;`)
     res.render("vwAdmin/products_admin", {
       layout: "adminLay",
-      title: "Products",
+      title: "PRODUCTS",
       proList,
       topSeller : req.topSeller,
       name : req.session.userName.toUpperCase(),
@@ -63,13 +63,27 @@ route.get("/products", async function (req, res) {
   }
 });
 
+route.post("/adminFilter", async function (req, res) {
+  // Filter products
+  const proList = await db.load(`SELECT * FROM books.book where sellPrice >= ${req.body.minPrice} and sellPrice <= ${req.body.maxPrice};`)
+
+  res.render("vwCustomer/products_customers", {
+    layout: "adminLay",
+    title: "PRODUCTS",
+    proList,
+    topSeller: req.topSeller,
+    name: req.session.userName.toUpperCase(),
+    user: req.session.userSession
+  });
+})
+
 route.get("/edit", async function (req, res) {
   const items = await db.load(`SELECT * FROM books.book WHERE SKU = ${req.query.SKU};`)
   const item = items[0]
 
   res.render("vwAdmin/edit", {
     layout: "adminLay",
-    title: "Edit",
+    title: "EDIT",
     item,
     topSeller : req.topSeller,
     name : req.session.userName.toUpperCase()
@@ -79,7 +93,7 @@ route.get("/edit", async function (req, res) {
 route.get("/add", async function (req, res) {
   res.render("vwAdmin/add", {
     layout: "adminLay",
-    title: "Add Products",
+    title: "ADD PRODUCTS",
     topSeller : req.topSeller,
     name : req.session.userName.toUpperCase()
   });
@@ -103,7 +117,7 @@ route.post("/add", upload.single("avatar"), async function (req, res) {
 
     res.render("vwAdmin/add", {
       layout: "adminLay",
-      title: "Add Products",
+      title: "ADD PRODUCTS",
       errorMes: "Invalid upload file",
       topSeller: req.topSeller,
       name: req.session.userName.toUpperCase(),
@@ -133,7 +147,7 @@ route.post("/add", upload.single("avatar"), async function (req, res) {
 
     res.render("vwAdmin/add", {
       layout: "adminLay",
-      title: "Add Products",
+      title: "ADD PRODUCTS",
       errorMes: "SKU has already existed",
       topSeller: req.topSeller,
       name: req.session.userName.toUpperCase(),
@@ -198,7 +212,7 @@ route.get("/profile", async function (req, res) {
 
   res.render("vwAccount/profile", {
     layout: false,
-    title: "Profile",
+    title: "PROFILE",
     random: req.random,
     getUser,
     user: req.session.userSession
@@ -211,7 +225,7 @@ route.post("/profile", async function (req, res) {
 
   res.render("home", {
     layout: "adminLay",
-    title: "Home",
+    title: "HOME",
     topSeller : req.topSeller,
     name : names[0].name.toUpperCase(),
     userSession : req.session.userSession
@@ -223,7 +237,7 @@ route.get("/password", function (req, res) {
 
   res.render("vwAccount/changePassword", {
     layout: false,
-    title: "Change Password",
+    title: "CHANGE PASSWORD",
     random: req.random,
     user: req.session.userSession
   })
@@ -238,7 +252,7 @@ route.post("/password", async function (req, res) {
   } else {
     res.render("vwAccount/changePassword", { 
       layout: false,
-      title: "Change Password",
+      title: "CHANGE PASSWORD",
       random: req.random,
       errorMes: "Wrong password !!"
   });
