@@ -184,9 +184,9 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 
 ![SearchByFilter](IMGReport/Sequence/Function/SearchbyFilter.png)
 
-- Catagories
+- Categories
 
-![Catagories](IMGReport/Sequence/Function/Catagories.png)
+![Categories](IMGReport/Sequence/Function/Catagories.png)
 
 - Cart
 
@@ -217,10 +217,91 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 ![Overall](IMGReport/Sequence/Overall/Overall.png)
 
 <h3 id="implementation">Implementation</h3>
+
 <h4 id="model-processing-model">Software Processing Model</h4>
 - While working on this project, our team employs the Agile model. The agile process model is a software development approach that is iterative in nature. We divided our project into smaller sprints using the Agile method: Account Sprint, User Sprint, Admin Sprint, and Driver Sprint. In the Account sprint, we continue to divide this sprint into many tasks such as sign in, sign up, forget password, etc. Each sprint lasts 1-2 weeks and includes six iterative phases: requirement, design, development, testing, deployment, and review. The division of the entire project into minor parts aids in the reduction of project risk and the overall project delivery time requirement. All members work on each sprint together; after running small test cases for each sprint, we quickly implement it again so that it does not interfere with other phases. - The agile model allows us to save time by improving our code, adding more features, or removing them.
 
 <h4 id="execution">Execution</h4>
+
+- Add book 
+
+![AddBook](IMGReport/Implementation/addBook.png)
+
+- Cart
+
+![Cart](IMGReport/Implementation/cart.png)
+
+- Categories
+
+![Categories](IMGReport/Implementation/Categories.png)
+
+- Checkout
+
+![Checkout](IMGReport/Implementation/checkout.png)
+
+- Comment
+
+![Comment](IMGReport/Implementation/comment.png)
+
+- Detail
+
+![Detail](IMGReport/Implementation/detail.png)
+
+- Edit Book
+
+![EditBook](IMGReport/Implementation/editBook.png)
+
+- Edit Profile
+
+![EditProfile](IMGReport/Implementation/editprofile.png)
+
+- Forget Password
+
+![ForgetPassword](IMGReport/Implementation/ForgetPass.png)
+
+- Login
+
+![Login](IMGReport/Implementation/Login.png)
+
+- Login Fail
+
+![LoginFail](IMGReport/Implementation/LoginFail.png)
+
+- Login Success
+
+![LoginSuccess](IMGReport/Implementation/LoginSuccess.png)
+
+- Products
+
+![Products](IMGReport/Implementation/Products.png)
+
+- Register
+
+![Register](IMGReport/Implementation/Register.png)
+
+- Register Success
+
+![RegisterSuccess](IMGReport/Implementation/RegisterSuccess.png)
+
+- Search by Filter
+
+![SearchByFilter](IMGReport/Implementation/SearchByFilter.png)
+
+- Search by Key
+
+![SearchByKey](IMGReport/Implementation/SearchByKey.png)
+
+- Transaction
+
+![Transaction](IMGReport/Implementation/transaction.png)
+
+- View Transaction - Admin
+
+![ViewTransactionAd](IMGReport/Implementation/viewtransAD.png)
+
+- Wishlist
+
+![Wishlist](IMGReport/Implementation/wishlist.png)
 
 <h3 id="testing">Testing</h3>
 In this chapter, we are using the template in the lab session to test all functions in our projects to make sure that all functions run smoothly.
