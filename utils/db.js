@@ -6,6 +6,7 @@ const cn = mysql.createConnection({
   user: "root",
   database: "books",
   password: "123456",
+  //Tien@041001
   port: "3306",
 });
 
