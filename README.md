@@ -169,6 +169,8 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 <h4 id="sequence">Sequence Diagram</h4>
 
 - Register
+
+
 ![Register](IMGReport/Sequence/Function/Register.png)
 
 - Login
