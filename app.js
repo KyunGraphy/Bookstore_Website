@@ -4,6 +4,7 @@ const session = require('express-session');
 const exhbs_section = require('express-handlebars-sections');
 
 const app = express();
+const port = 3006;
 
 app.use(express.static("./public"));
 
@@ -46,4 +47,6 @@ app.get("/demo", function (req, res) {
   res.render('demo')
 })
 
-app.listen(3000);
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}/guest`);
+});
