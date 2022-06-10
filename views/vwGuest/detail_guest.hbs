@@ -120,74 +120,37 @@
 
                                 <ul class="col-12 nav nav-tabs" id="myTab" role="tablist">
                                     <li class="col-12 nav-item">
-                                        <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Customer Reviews  (2)</a>
+                                        <p class="nav-link active" id="contact-tab" data-toggle="tab" href="" role="tab" aria-controls="contact" aria-selected="false">Customer Reviews  ({{this.cmtCount.cmt}})</p>
                                     </li>
                                 </ul>
                                 <div class="col-12 tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
-                                        <div class="media">
-                                            <div class="row no-gutter">
-                                                <div class="col-12 col-lg-2 p-0">
+                                        {{#each this.comments}}
+                                            <div class="my-4">
+                                                <div class="row no-gutter">
+                                                    <div class="col-12 col-lg-2 p-0">
 
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 d-flex  justify-content-center">
-                                                            <img src="/book-shop/img/user.jpg" alt="Generic placeholder image">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-12 d-flex  justify-content-center">
+                                                                <img src="/book-shop/img/userAva.jpg" alt="Generic placeholder image">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-12 d-flex mt-2 justify-content-center">
-                                                            <ul class="user-rating">
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star"></i></a></li>
-                                                            </ul>
+
+                                                    </div>
+
+                                                    <div class="col-12 col-lg-10 p-0">
+                                                        <div class="media-body ">
+                                                            <span class="text-center text-lg-left d-block">{{date}}</span>
+                                                            <h5 class="mb-2 text-center text-lg-left">{{name}}</h5>
+                                                            <p class="text-center text-lg-left">{{content}}</p>
                                                         </div>
                                                     </div>
 
                                                 </div>
-
-                                                <div class="col-12 col-lg-10 p-0">
-                                                    <div class="media-body">
-                                                        <span class="text-center text-lg-left d-block">27 Aug 2017</span>
-                                                        <h5 class="mb-2 text-center text-lg-left">Media heading</h5>
-                                                        <p class="text-center text-lg-left">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
-                                                    </div>
-                                                </div>
-
                                             </div>
-                                        </div>
-                                        <div class="media">
-                                            <div class="row no-gutter">
-                                                <div class="col-12 col-lg-2 p-0">
-
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 d-flex  justify-content-center">
-                                                            <img src="/book-shop/img/user2.jpg" alt="Generic placeholder image">
-                                                        </div>
-                                                        <div class="col-12 d-flex mt-2 justify-content-center">
-                                                            <ul class="user-rating">
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
-                                                                <li><a href="#"><i class="lni-star"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="col-12 col-lg-10 p-0">
-                                                    <div class="media-body ">
-                                                        <span class="text-center text-lg-left d-block">27 Aug 2017</span>
-                                                        <h5 class="mb-2 text-center text-lg-left">Media heading</h5>
-                                                        <p class="text-center text-lg-left">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
+                                        {{/each}}
+                                            
 
                                         <div class="row pl-2 pr-2">
                                             <div class="col-12 d-flex mb-4 mt-3">
@@ -195,40 +158,48 @@
                                                 <hr class="w-100 ml-5">
                                             </div>
                                             <div class="col-12">
-                                                <form class="getin_form border-form" id="register">
+                                                <form class="getin_form border-form" id="register" method="post" action="/custom/cmt">
                                                     <div class="row">
-                                                        <div class="col-md-6 col-sm-12">
-                                                            <div class="form-group bottom35">
-                                                                <input type="text" class="form-control" placeholder="Name*" required="" id="registerName">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 col-sm-12">
-                                                            <div class="form-group bottom35">
-                                                                <input type="email" class="form-control" placeholder="Email*" required="" id="registerEmail">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-lg-2 text-center text-lg-left">
+                                                        {{!-- <div class="col-12 col-lg-2 text-center text-lg-left d-flex align-items-center">
                                                             <h5 class="text-nowrap">Your Rating</h5>
                                                         </div>
                                                         <div class="col-12 col-lg-10 text-center text-lg-left">
                                                             <ul class="user-rating">
+                                                                <select name="cars" id="cars">
+                                                                    <option value="5">
+                                                                        Very Good
+                                                                    </option>
+                                                                    <option value="4">
+                                                                        Good
+                                                                    </option>
+                                                                    <option value="3">
+                                                                        Normal
+                                                                    </option>
+                                                                    <option value="2">
+                                                                        Not Good
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        Bad
+                                                                    </option>
+                                                                </select>
                                                                 <li><a href="#"><i class="lni-star-filled"></i></a></li>
                                                                 <li><a href="#"><i class="lni-star-filled"></i></a></li>
                                                                 <li><a href="#"><i class="lni-star-filled"></i></a></li>
                                                                 <li><a href="#"><i class="lni-star-filled"></i></a></li>
                                                                 <li><a href="#"><i class="lni-star"></i></a></li>
                                                             </ul>
-                                                        </div>
+                                                        </div> --}}
+                                                        <input type="hidden" value="{{this.item.SKU}}" name="SKU">
                                                         <div class="col-12">
                                                             <div class="form-group">
                                                                 <!--                                                                            <label for="comment">Your Rating:</label>-->
-                                                                <textarea class="form-control textareaclass" rows="5" id="comment" placeholder="Your Review"></textarea>
+                                                                <textarea class="form-control textareaclass" rows="5" id="comment" name="comment" placeholder="Your Review" required></textarea>
                                                             </div>
                                                         </div>
 
                                                         <div class="col-12 mt-3">
                                                             <div class="form-group d-flex justify-content-center d-lg-block">
-                                                                <button class="text-center btn green-color-yellow-gradient-btn">Add Review</button>
+                                                                <a class="text-center btn green-color-yellow-gradient-btn" href="/account">Add Review</a>
                                                             </div>
                                                         </div>
 
