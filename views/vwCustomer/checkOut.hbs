@@ -1,0 +1,201 @@
+{{#section 'css'}}
+    <!-- Favicon -->
+    <link rel="icon" href="/book-shop/img/logo.png">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="/css/wow.css">
+    <link rel="stylesheet" href="/css/LineIcons.min.css">
+    <!-- Mega Menu  -->
+    <link rel="stylesheet" href="/css/megamenu.css">
+    <!-- StyleSheet  -->
+    <link rel="stylesheet" href="/book-shop/css/style.css">
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="/book-shop/css/custom.css">
+
+    {{!-- Font awesome Bootstrap --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+{{/section}}
+
+    <!--slider sec strat-->
+    <section id="slider-sec" class="slider-sec parallax" style="background: url('/book-shop/img/banner1.4.jpg');">
+    </section>
+    <!--slider sec end-->
+
+    <div class="shop-cart wow slideInUp" data-wow-duration="2s">
+        <div class="container">
+            {{#if this.itemExist}}
+                {{!-- <b style="font-size: 120%;">No Item in Your Cart</b>
+                <div class="col-6 text-left text-center">
+                    <a class="btn green-color-yellow-gradient-btn w-50 py-3" href="/custom/products">GO SHOPPING</a>
+                </div> --}}
+
+                <div class="row pt-5">
+                    <div class="col-12 col-md-12  cart_table wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="table-responsive">
+                            <table class="table table-bordered border-radius">
+                                <thead>
+                                <tr>
+                                    <th class="darkcolor">Product</th>
+                                    <th class="darkcolor">Price</th>
+                                    <th class="darkcolor">Quantity</th>
+                                    <th class="darkcolor">Total</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-12 wow slideInRight" data-wow-duration="2s">
+                        <div class="card-total">
+                            <p style="font-size: 180%;" class="text-center"><b><i>No Item in Your Cart</i></b></p>
+                            <div class="col-12 text-left text-center">
+                                <a class="btn green-color-yellow-gradient-btn w-50 py-3" href="/custom/products">GO SHOPPING <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{else}}
+                <!-- START SHOP CART TABLE -->
+                <div class="row pt-5">
+                    <div class="col-12 col-md-12  cart_table wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="table-responsive">
+                            <table class="table table-bordered border-radius">
+                                <thead>
+                                <tr>
+                                    <th class="darkcolor">Product</th>
+                                    <th class="darkcolor">SKU</th>
+                                    <th class="darkcolor">Price</th>
+                                    <th class="darkcolor">Quantity</th>
+                                    <th class="darkcolor">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    {{#each this.cartList}}
+                                        <tr>
+                                            <td>
+                                                <div class="d-table product-detail-cart w-100">
+
+                                                    <div class="">
+                                                        <div class="row no-gutters">
+
+                                                            <div class="col-12 col-lg-2 product-detail-cart-image">
+                                                            <a class="shopping-product" href="#"><img src="/imgProducts/{{SKU}}.jpg" alt="Generic placeholder image"></a>
+                                                            </div>
+
+                                                            <div class="col-12 col-lg-10 mt-auto product-detail-cart-data">
+                                                                <div class="media-body ml-lg-3">
+                                                                    <h4 class="product-name"><a href="/custom/detail?SKU={{SKU}}">{{title}}</a></h4>
+                                                                    <p class="product-des">We offer the most complete in the country</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h6 class="text-center">#{{SKU}}</h6>
+                                            </td>
+                                            <td>
+                                                <h4 class="text-center amount">${{sellPrice}}</h4>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="quote text-center mt-1">
+                                                    <h4 class="text-center amount">{{quantity}}</h4>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h4 class="text-center amount">${{totalPrice}}</h4>
+                                            </td>
+                                        </tr>
+                                    {{/each}}
+                                    <tr>
+                                        <td colspan="4">
+                                            <h4 class="text-center amount">Product Price</h4>
+                                        </td>
+                                        <td>
+                                            <h4 class="text-center amount">$300</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <h4 class="text-center amount">Shipping Price</h4>
+                                        </td>
+                                        <td>
+                                            <h4 class="text-center amount">$300</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <h4 class="text-center amount">Total</h4>
+                                        </td>
+                                        <td>
+                                            <h4 class="text-center amount">$300</h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="apply_coupon">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 wow slideInRight" data-wow-duration="2s">
+                                    <div class="card-total">
+                                        <div class="font-weight-bold d-flex justify-content-center">INFORMATION</div>
+                                        <div><b>User: </b>{{this.user.username}}</div>
+                                        <div><b>Name: </b>{{this.user.name}}</div>
+                                        <div><b>Email: </b>{{this.user.email}}</div>
+                                        <div><b>Phone: </b>{{this.user.phone}}</div>
+                                        <div><b>Address: </b>{{this.user.address}}</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-8 wow slideInRight d-flex align-items-center justify-content-center">
+                                    <a class="btn green-color-yellow-gradient-btn w-50 py-3 mx-3" href="/custom/order">VIEW YOUR ORDER</a>
+                                    <a class="btn green-color-yellow-gradient-btn w-50 py-3 mx-3" href="/custom/products">Back to Shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
+            <!-- END SHOP CART TABLE -->
+
+            <!-- START SHOP CART CHECKOUT FORM -->
+            
+            <!-- END SHOP CART CHECKOUT FORM -->
+
+        </div>
+    </div>
+
+    {{!-- <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> --}}
+
+
+{{#section 'js'}}
+    <!-- JavaScript -->
+    <script src="/js/bundle.min.js"></script>
+    <!-- Plugin Js -->
+    <script src="/js/jquery.fancybox.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/jquery.cubeportfolio.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/bootstrap-input-spinner.js"></script>
+    <script src="/js/parallaxie.min.js"></script>
+    <!-- Custom Script -->
+    <script src="/js/script.js"></script>
+{{/section}}
