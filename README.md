@@ -1,6 +1,9 @@
-# Project Report
+<h1 align="center">PROJECT REPORT</h1>
 
-## Happy Bookstore Website
+<h2 align="center">
+    <img src=".IMGReport/Logoo.png" width="36"/>
+    Happy Bookstore
+</h2>
 
 ## Members:
 - [Tran Van Tien - ITITIU19218](https://www.facebook.com/profile.php?id=100010644854591)
