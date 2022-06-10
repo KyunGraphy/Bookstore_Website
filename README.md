@@ -373,6 +373,15 @@ Future work will entail building the remaining planned features in order to have
 
 <h3 id="references">References</h3>
 
+- [HTML](https://en.wikipedia.org/wiki/HTML?fbclid=IwAR3y2X88do0CrD92Fq9SBJ-KT9567DbGjgkWPvMntRp0VYjmRdBMKy2m-3I)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [MySQL Workbench](https://en.wikipedia.org/wiki/MySQL_Workbench)
+- [HandleBars Templating in ExpressJS ](https://www.geeksforgeeks.org/handlebars-templating-in-expressjs/#:~:text=Handlebars.,hbs%20module%2C%20available%20through%20npm)
+- [Introduction to Node.js](https://nodejs.dev/learn)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript?fbclid=IwAR02f5QyZ0uoeERhNgWbyXA8cSh2eEV4QfuGvGS0jYh2NMFL-vXB_ECOLew)
+
+
+
 
 
 
