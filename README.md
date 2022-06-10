@@ -152,7 +152,8 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 
 <h3 id="system-architecture">System Architecture</h3>
 <h4 id="use-case">Use Case Diagram</h4>
-![UseCase](IMGReport/Use%20Case/Use%20case%20Diagram.png)
+
+![UseCase](IMGReport/UseCase/UsecaseDiagram.png)
 
 
 <h4 id="use-case-des">Use Case Description</h4>
