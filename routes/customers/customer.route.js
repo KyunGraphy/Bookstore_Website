@@ -78,7 +78,7 @@ route.get("/detail", async function (req, res) {
     layout: "customLay",
     title: "Details",
     item,
-    cmtCount: cmtCount[0],
+    cmtCountTotal: cmtCount[0].cmt,
     comments,
     reactRs,
     topSeller: req.topSeller,

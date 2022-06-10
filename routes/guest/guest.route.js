@@ -65,7 +65,7 @@ route.get("/detail", async function (req, res) {
 
   // Count Cmt
   const cmtCount = await db.load(`select count(*) as cmt from books.comment where SKU = '${req.query.SKU}';`)
-  console.log(cmtCount[0].cmt);
+
   const top8book = await db.load(`SELECT * FROM books.book limit 8;`)
   res.render("vwGuest/detail_guest", {
     layout: "guestLay",
