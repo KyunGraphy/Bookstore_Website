@@ -38,6 +38,7 @@ route.get("/products", async function (req, res) {
     res.render("vwAdmin/products_admin", {
       layout: "adminLay",
       title: "PRODUCTS",
+      category: req.query.cate,
       proList,
       topSeller: req.topSeller,
       name: req.session.userName.toUpperCase(),

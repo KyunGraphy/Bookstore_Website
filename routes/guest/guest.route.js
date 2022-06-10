@@ -20,6 +20,7 @@ route.get("/products", async function (req, res) {
     res.render("vwGuest/products_guest", {
       layout: "guestLay",
       title: "Products",
+      category: req.query.cate,
       proList,
       topSeller
     });
