@@ -197,7 +197,7 @@ route.get("/pending", async function (req, res) {
 
   for (let i = 0; i < pendingList.length; i++) {
     pendingList[i].totalPrice =
-      pendingList[i].quantity * pendingList[i].sellPrice;
+    pendingList[i].quantity * pendingList[i].sellPrice;
     pendingList[i].totalPrice = +pendingList[i].totalPrice.toFixed(3);
   }
 
@@ -296,6 +296,19 @@ route.post("/password", async function (req, res) {
     });
   }
 });
+
+route.get("/contact", async function (req, res) {
+  const listMessage = await db.load(`SELECT * FROM books.contact join books.customer where books.contact.username = books.customer.username;`)
+
+  res.render("vwAdmin/contact", {
+    layout: "adminLay",
+    title: "MESSAGE",
+    topSeller: req.topSeller,
+    listMessage,
+    name: req.session.userName.toUpperCase(),
+    user: req.session.userSession
+  });
+})
 
 async function topSeller(req, res, next) {
   req.topSeller = await db.load(

@@ -244,6 +244,21 @@ route.get("/contact", async function (req, res) {
   });
 });
 
+route.post("/contact", async function (req, res) {
+  console.log(req.body);
+  console.log(req.session);
+  await db.load(`INSERT INTO books.contact (username, name, subject, content) VALUES ('${req.session.userSession}', '${req.session.userName}', '${req.body.userSubject}', '${req.body.userMessage}');`)
+  
+  res.render("vwCustomer/contact", {
+    layout: "customLay",
+    title: "Contact Us",
+    topSeller: req.topSeller,
+    name: req.session.userName.toUpperCase(),
+    msg: "Your Message Have Been Sent !!",
+    user: req.session.userSession
+  });
+});
+
 route.post("/customFilter", async function (req, res) {
     // Filter products
     const proList = await db.load(`SELECT * FROM books.book where sellPrice >= ${req.body.minPrice} and sellPrice <= ${req.body.maxPrice};`)
