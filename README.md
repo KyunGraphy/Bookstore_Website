@@ -170,10 +170,10 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 
 - Register
 
-
 ![Register](IMGReport/Sequence/Function/Register.png)
 
 - Login
+
 ![Login](IMGReport/Sequence/Function/Login.png)
 
 
