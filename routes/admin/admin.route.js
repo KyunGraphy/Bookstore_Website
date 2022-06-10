@@ -18,7 +18,7 @@ const upload = multer({ storage: storage })
 route.use(topSeller)
 
 route.get("/", async function (req, res) {
-  res.render("home", {
+  res.render("homeAdmin", {
     layout: "adminLay",
     title: "Home",
     topSeller : req.topSeller,
