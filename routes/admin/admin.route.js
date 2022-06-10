@@ -190,6 +190,7 @@ route.get("/pending", async function (req, res) {
 })
 
 route.post("/pending", async function (req, res) {
+
   if (req.query.f === 'accept') {
     for (let i = 0; i < req.body.transId.length; i++) {
       await db.load(`UPDATE books.transaction SET status = 'accept' WHERE (transId = '${req.body.transId[i]}');`)
