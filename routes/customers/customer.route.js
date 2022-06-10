@@ -189,6 +189,7 @@ route.get("/checkOut", async function (req, res) {
     title: "Check Out",
     cartList,
     sumPrice,
+    priceIncludeShip: sumPrice + 5,
     name: req.session.userName.toUpperCase(),
     user: user[0]
   })
