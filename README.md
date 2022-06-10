@@ -1,13 +1,13 @@
-<h1>Project Report</h1>
+# Project Report
 
-<h3>Bookstore Website</h3>
+## Happy Bookstore Website
 
-# Members:
+## Members:
 - [Tran Van Tien - ITITIU19218](https://www.facebook.com/profile.php?id=100010644854591)
 - [Tran Trung Kien - ITITIU19021](https://www.facebook.com/kyun.iam)
 - [Hoang Trung Phong - ITITIU19179](https://www.facebook.com/hoang.trungphong.94)
 
-# Table of Contents:
+## Table of Contents:
 * [Chapter I:Project Description](#project-description)
     * [Project Overview](#project-overview)
     * [The Purpose of the Project](#purpose)
