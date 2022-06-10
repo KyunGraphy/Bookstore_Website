@@ -158,6 +158,54 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 
 <h4 id="use-case-des">Use Case Description</h4>
 
+- Usecase 1
+
+![Usecase1](IMGReport/UseCaseDescription/Case1.png)
+
+- Usecase 2
+
+![Usecase2](IMGReport/UseCaseDescription/Case2.png)
+
+- Usecase 2.1
+
+![Usecase2.1](IMGReport/UseCaseDescription/Case2.1.png)
+
+- Usecase 3
+
+![Usecase3](IMGReport/UseCaseDescription/Case3.png)
+
+- Usecase 4
+
+![Usecase4](IMGReport/UseCaseDescription/Case4.png)
+
+- Usecase 5
+
+![Usecase5](IMGReport/UseCaseDescription/Case5.png)
+
+- Usecase 6
+
+![Usecase6](IMGReport/UseCaseDescription/Case6.png)
+
+- Usecase 6.1
+
+![Usecase6.1](IMGReport/UseCaseDescription/Case6.1.png)
+
+- Usecase 7
+
+![Usecase7](IMGReport/UseCaseDescription/Case7.png)
+
+- Usecase 8
+
+![Usecase8](IMGReport/UseCaseDescription/Case8.png)
+
+- Usecase 9
+
+![Usecase9](IMGReport/UseCaseDescription/Case9.png)
+
+- Usecase 10
+
+![Usecase10](IMGReport/UseCaseDescription/Case10.png)
+
 <h4 id="activity">Activity Diagram</h4>
 
 ![Activity](IMGReport/Activity/ActivityDiagram.png)
