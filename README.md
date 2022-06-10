@@ -1,7 +1,7 @@
 <h1 align="center">PROJECT REPORT</h1>
 
 <h2 align="center">
-    <img src=".IMGReport/Logoo.png" width="36"/>
+    <img src="./IMGReport/Logoo.png" width="36"/>
     Happy Bookstore
 </h2>
 
