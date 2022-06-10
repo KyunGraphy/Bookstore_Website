@@ -176,8 +176,45 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 
 ![Login](IMGReport/Sequence/Function/Login.png)
 
+- Search By Keyword
+
+![SearchByKeyword](IMGReport/Sequence/Function/Searchbykeyword.png)
+
+- Search By Filter
+
+![SearchByFilter](IMGReport/Sequence/Function/SearchbyFilter.png)
+
+- Catagories
+
+![Catagories](IMGReport/Sequence/Function/Catagories.png)
+
+- Cart
+
+![Cart](IMGReport/Sequence/Function/Cart.png)
+
+- WishList
+
+![WishList](IMGReport/Sequence/Function/Wishlist.png)
+
+- Review
+
+![Review](IMGReport/Sequence/Function/Review.png)
+
+- Payment
+
+![Payment](IMGReport/Sequence/Function/Payment.png)
+
+- Transaction Log
+
+![TransactionLog](IMGReport/Sequence/Function/Transaction-log.png)
+
+- Admin Management
+
+![AdminManagement](IMGReport/Sequence/Function/Admin-management.png)
 
 <h4 id="sequence-overall">Sequence Diagram overall</h4>
+
+![Overall](IMGReport/Sequence/Overall/Overall.png)
 
 <h3 id="implementation">Implementation</h3>
 <h4 id="model-processing-model">Software Processing Model</h4>
