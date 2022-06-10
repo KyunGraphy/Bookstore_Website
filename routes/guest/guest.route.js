@@ -89,7 +89,7 @@ route.get("/detail", async function (req, res) {
 // });
 
 route.get("/contact", async function (req, res) {
-  // const topSeller = await db.load(`SELECT * FROM books.book order by sellPrice desc limit 4;`)
+  const topSeller = await db.load(`SELECT * FROM books.book order by sellPrice desc limit 4;`)
 
   res.render("vwGuest/contact", {
     layout: "guestLay",
