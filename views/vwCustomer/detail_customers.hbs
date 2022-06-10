@@ -1,0 +1,466 @@
+{{#section 'css'}}
+    <!-- Favicon -->
+    <link rel="icon" href="/book-shop/img/Logoo.png">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="/css/wow.css">
+    <link rel="stylesheet" href="/css/LineIcons.min.css">
+    <link rel="stylesheet" href="/css/nouislider.min.css">
+    <link rel="stylesheet" href="/css/range-slider.css">
+    <!-- Mega Menu  -->
+    <link rel="stylesheet" href="/css/megamenu.css">
+    <!-- StyleSheet  -->
+    <link rel="stylesheet" href="/book-shop/css/style.css">
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="/book-shop/css/custom.css">
+
+    {{!-- Font awesome Bootstrap --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+{{/section}}
+
+<!--slider sec strat-->
+<section id="slider-sec" class="slider-sec parallax" style="background: url('/book-shop/img/banner1.1.jpg');">
+</section>
+<!--slider sec end-->
+
+<!-- START HEADING SECTION -->
+<div class="about_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="product-body">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb text-center text-lg-left">
+                            <li class="breadcrumb-item"><a href="/custom?username={{this.user}}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/custom/products?cate={{this.item.category}}">{{this.item.category}}</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="/custom/products">Books</a></li>
+                            <li class="breadcrumb-item"><a class="active" href="#">{{this.item.title}}</a></li>
+                        </ol>
+                    </nav>
+                    <div class="pro-detail-sec row">
+                        <div class="col-12">
+                            <h4 class="pro-heading text-center text-lg-left">{{this.item.title}}</h4>
+                            <h5 class="mb-2 text-center text-lg-left"><b>Author: </b>{{this.item.author}}</h5>
+                            <p class="pro-text text-center text-lg-left">{{this.item.headDescription}}</p>
+                        </div>
+                    </div>
+                    <div class="row product-list product-detail">
+
+                        <div class="col-12 col-lg-6 product-detail-slider">
+                            <div class="wrapper">
+                                <div class="Gallery swiper-container img-magnifier-container" id="gallery">
+                                    <div class="swiper-wrapper myimgs">
+                                        <div class="swiper-slide"> <a href="/imgProducts/{{this.item.SKU}}.jpg" data-fancybox="1" title="Zoom In"><img class="myimage" src="/imgProducts/{{this.item.SKU}}.jpg" alt="gallery"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="product-single-price">
+                                        <h4> <span style="font-size: 150%;" class="mx-2"><del>${{this.item.oriPrice}}</del></span> <span style="font-size: 200%;" class="mx-2 real-price">${{this.item.sellPrice}}</span> </h4>
+                                    </div>                                    
+                                </div>
+                                <div class="col-lg-5">
+                                    <div style="font-size: 120%;">
+                                        <i class="fa fa-heartbeat" aria-hidden="true"></i>    Like: xxx
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-single-price">
+                                <p class="pro-description">{{this.item.description}}</p>
+                            </div>
+
+                            <div class="product-checklist">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Satisfaction 100% Guaranteed</li>
+                                    <li><i class="fas fa-check"></i> free shipping on orders over $99</li>
+                                    <li><i class="fas fa-check"></i> 14 days easy Return</li>
+                                </ul>
+                            </div>
+
+                            <form method="post">
+                                <div class="row product-quantity input_plus_mins no-gutters">
+                                    
+                                    <div class="qty col-12 col-lg-5 d-lg-flex  align-items-lg-center d-inline-block">
+                                        <span class="minus bg-dark"><i class="lni-minus"></i></span>
+                                        <input type="number" class="count" name="qty" value="1">
+                                        <span class="plus bg-dark"><i class="lni-plus"></i></span>
+                                        <form action="">
+                                            <input type="hidden" id="reactUser" value="{{this.user}}">
+                                            <input type="hidden" id="reactSKU" value="{{this.item.SKU}}">
+                                            {{#if this.reactRs}}
+                                                <a class="mx-2 btn" id="likeBtn">
+                                                    <i id="heart" class="text-danger fa fa-heart fa-2x mx-2" aria-hidden="true"></i>
+                                                </a>
+                                            {{else}}
+                                                <a class="mx-2 btn" id="likeBtn">
+                                                    <i id="heart" class="text-danger fa fa-heart-o fa-2x mx-2" aria-hidden="true"></i>
+                                                </a>
+                                            {{/if}}
+                                        </form>
+                                    </div>
+                                    <div class="col-12 col-lg-7 d-flex align-content-center">
+                                        <button class="btn green-color-yellow-gradient-btn">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            ADD TO CART
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                            <div class="dropdown-divider"></div>
+
+                            <div class="product-tags-list">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><p class="d-inline">SKU: <span>{{this.item.SKU}}</span></p></li>
+                                        <li class="breadcrumb-item"><span class="d-inline">Categories: <a href="/custom/products?cate={{this.item.category}}">{{this.item.category}}</a><span class="comma-separtor"></li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="share-product-details">
+                                <ul class="share-product-icons">
+                                    <li><p>Share Link:</p></li>
+                                    <li><a href="#" class="facebook-bg-hvr"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="twitter-bg-hvr"><i class="fab fa-twitter" aria-hidden="true"></i></a> </li>
+                                    <li><a href="#" class="linkedin-bg-hvr"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="instagram-bg-hvr"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4 mb-4">
+                            <div class="row no-gutters product-all-details">
+
+                                <ul class="col-12 nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="col-12 nav-item">
+                                        <p class="nav-link active" id="contact-tab" data-toggle="tab" href="" role="tab" aria-controls="contact" aria-selected="false">Customer Reviews  ({{this.cmtCount.cmt}})</p>
+                                    </li>
+                                </ul>
+                                <div class="col-12 tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                                        {{#each this.comments}}
+                                            <div class="my-4">
+                                                <div class="row no-gutter">
+                                                    <div class="col-12 col-lg-2 p-0">
+
+                                                        <div class="row no-gutters">
+                                                            <div class="col-12 d-flex  justify-content-center">
+                                                                <img src="/book-shop/img/userAva.jpg" alt="Generic placeholder image">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-12 col-lg-10 p-0">
+                                                        <div class="media-body ">
+                                                            <span class="text-center text-lg-left d-block">{{date}}</span>
+                                                            <h5 class="mb-2 text-center text-lg-left">{{name}}</h5>
+                                                            <p class="text-center text-lg-left">{{content}}</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        {{/each}}
+                                            
+
+                                        <div class="row pl-2 pr-2">
+                                            <div class="col-12 d-flex mb-4 mt-3">
+                                                <h5 class="text-nowrap">Add Review</h5>
+                                                <hr class="w-100 ml-5">
+                                            </div>
+                                            <div class="col-12">
+                                                <form class="getin_form border-form" id="register" method="post" action="/custom/cmt">
+                                                    <div class="row">
+                                                        {{!-- <div class="col-12 col-lg-2 text-center text-lg-left d-flex align-items-center">
+                                                            <h5 class="text-nowrap">Your Rating</h5>
+                                                        </div>
+                                                        <div class="col-12 col-lg-10 text-center text-lg-left">
+                                                            <ul class="user-rating">
+                                                                <select name="cars" id="cars">
+                                                                    <option value="5">
+                                                                        Very Good
+                                                                    </option>
+                                                                    <option value="4">
+                                                                        Good
+                                                                    </option>
+                                                                    <option value="3">
+                                                                        Normal
+                                                                    </option>
+                                                                    <option value="2">
+                                                                        Not Good
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        Bad
+                                                                    </option>
+                                                                </select>
+                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
+                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
+                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
+                                                                <li><a href="#"><i class="lni-star-filled"></i></a></li>
+                                                                <li><a href="#"><i class="lni-star"></i></a></li>
+                                                            </ul>
+                                                        </div> --}}
+                                                        <input type="hidden" value="{{this.item.SKU}}" name="SKU">
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <!--                                                                            <label for="comment">Your Rating:</label>-->
+                                                                <textarea class="form-control textareaclass" rows="5" id="comment" name="comment" placeholder="Your Review" required></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <div class="form-group d-flex justify-content-center d-lg-block">
+                                                                <button class="text-center btn green-color-yellow-gradient-btn">Add Review</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--START LATEST ARRIVALS-->
+    <div class="lastest_arrivals">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h1>Published Books</h1>
+                </div>
+
+                <div class="col-12">
+                    <div class="lastest_featured_products owl-carousel owl-theme">
+
+                        {{#each this.topSeller}}
+                            <div class="lastest_arrival_items item">
+                                <a href="/custom/detail?SKU={{SKU}}" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                                <div class="card">
+                                    <span class="product-type">NEW</span>
+                                    <div class="image-holder">
+                                        <a href="/custom/detail?SKU={{SKU}}" data-fancybox="lastest_product" data-title="Shirt Name">
+                                            <img src="/imgProducts/{{SKU}}.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <a href="/custom/detail?SKU={{SKU}}"><h5 class="card-title">{{title}}</h5></a>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <p class="card-text"> ${{sellPrice}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/each}}
+{{!-- 
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">  <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="img/l7.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                        <img src="/book-shop/img/l7.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title">The Joke</h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text text-center"> $850.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">
+                                <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="img/l8.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                        <img src="/book-shop/img/l8.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title">Never Let Me Go </h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text text-center"> $650.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">
+                                <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="img/l9.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                        <img src="/book-shop/img/l9.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title"> The Last World</h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text text-center"> $680.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">
+                                <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="img/l10.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                        <img src="/book-shop/img/l10.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title">Brave New World</h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text text-center"> $250.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">
+                                <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="img/l11.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                        <img src="/book-shop/img/l11.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title">Life Without Money</h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text text-center"> $850.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">
+                                <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="img/l12.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                        <img src="/book-shop/img/l12.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title">Life Is Elsewhere</h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text text-center"> $950.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">
+                                <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="img/l7.jpg" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+                                        <img src="/book-shop/img/l13.jpg" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title">The Road</h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text text-center"> $550.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> --}}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END LATEST ARRIVALS-->
+
+</div>
+<!-- END HEADING SECTION -->
+
+{{#section 'js'}}
+    <!-- JavaScript -->
+    <script src="/js/bundle.min.js"></script>
+    <!-- Plugin Js -->
+    <script src="/js/jquery.fancybox.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/jquery.cubeportfolio.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/bootstrap-input-spinner.js"></script>
+    <script src="/js/parallaxie.min.js"></script>
+    <script src="/js/stickyfill.min.js"></script>
+    <script src="/js/nouislider.min.js"></script>
+    <!-- Custom Script -->
+    <script src="/js/script.js"></script>
+    <script src="/js/react.js"></script>
+{{/section}}
