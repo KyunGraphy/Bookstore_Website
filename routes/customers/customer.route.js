@@ -25,6 +25,7 @@ route.get("/products", async function (req, res) {
     res.render("vwCustomer/products_customers", {
       layout: "customLay",
       title: "Products",
+      category: req.query.cate,
       proList,
       topSeller: req.topSeller,
       name: req.session.userName.toUpperCase(),
