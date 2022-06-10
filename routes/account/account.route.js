@@ -111,6 +111,23 @@ route.post("/forgot", async function (req, res) {
         <ul>  
             <li>New Password: ${newPassword}</li>
         </ul>
+        <div style = "width:50%">
+        <table>
+        <tr>
+        <td>
+        <img style = "width:50%" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.15752-9/284256942_746084573411722_9065148677348780445_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=IBEnOkwxyogAX-Bc0Nx&_nc_ht=scontent.fsgn2-1.fna&oh=03_AVJCH3DTBCty2Q_Cj4FDMMgqK63JweQW3iPLvJR5ZZE_1Q&oe=62CABAC3" alt="logo" class="logo-scrolled">
+        </td>
+        <td>
+        Happy Bookstore <br>                
+        International University – Vietnam National University
+        Ho Chi Minh City, Vietnam <br>
+        Email: tien04100@gmail.com <br>
+        Facebook: https://www.facebook.com/profile.php?id=100010644854591 <br>
+        Tel: 0969 141 776 (Mr.Tien)
+        </td>
+        </tr>
+        </table>
+        </div>
         `;
     
         // create reusable transporter object using the default SMTP transport
@@ -132,7 +149,7 @@ route.post("/forgot", async function (req, res) {
     
         // setup email data with unicode symbols
         var mailOptions = {
-            from: '"KYUN Book Store" <kientrung1387@gmail.com>', // sender address
+            from: '"Happy Bookstore" <kientrung1387@gmail.com>', // sender address
             // to: 'kientrung1388@gmail.com',
             to: req.body.email,
             // subject: 'Receive New Password', // Subject line
