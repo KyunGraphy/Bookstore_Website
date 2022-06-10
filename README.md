@@ -1,6 +1,8 @@
-<h1 align="center">PROJECT REPORT :100:</h1>
+<h1 align="center">:vietnam: PROJECT REPORT :100:</h1>
 
-<h2 align="center">Happy Bookstore
+<h2 align="center">
+    <img src="./IMGReport/Logoo.png" width="36"/>
+Happy Bookstore
     <img src="./IMGReport/Logoo.png" width="36"/>
 </h2>
 
