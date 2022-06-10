@@ -1,0 +1,191 @@
+{{#section 'css'}}
+    <!-- Favicon -->
+    <link rel="icon" href="/book-shop/img/logo.png">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="/css/wow.css">
+    <link rel="stylesheet" href="/css/LineIcons.min.css">
+    <link rel="stylesheet" href="/css/nouislider.min.css">
+    <link rel="stylesheet" href="/css/range-slider.css">
+    <!-- Mega Menu  -->
+    <link rel="stylesheet" href="/css/megamenu.css">
+    <!-- StyleSheet  -->
+    <link rel="stylesheet" href="/book-shop/css/style.css">
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="/book-shop/css/custom.css">
+
+    {{!-- Font awesome Bootstrap --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+{{/section}}
+
+
+
+<!--slider sec strat-->
+<section id="slider-sec" class="slider-sec parallax" style="background: url('/book-shop/img/banner1.1.jpg');">
+</section>
+<!--slider sec end-->
+
+<!-- START HEADING SECTION -->
+<div class="about_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="product-body">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb text-center text-lg-left">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Categories</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="#">Books</a></li>
+                            <li class="breadcrumb-item"><a class="active" href="#">Add Book</a></li>
+                        </ol>
+                    </nav>
+                    <div class="pro-detail-sec row">
+                        <div class="col-12">
+
+                            {{!-- <p class="pro-text text-center text-lg-left">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p> --}}
+                        </div>
+                    </div>
+                    <form method="post" enctype="multipart/form-data" action="">
+                        <div class="row product-list product-detail">
+
+                            <div class="col-12 col-lg-6 product-detail-slider">
+                                <label for="avatar">Choose a profile picture:</label>
+                                <input type="file" id="bookImg" name="avatar" accept="image/*">
+                                <div class="product-single-price mt-4">
+                                    <h2 class="pro-heading text-center text-lg-left">
+                                        <input type="text" name="title" id="" placeholder="Enter Book Name" required>
+                                    </h2>           
+                                    <br>          
+                                    <h4><span class="real-price">
+                                            <input type="text" class="form-control selling-price mt-2" name="author" placeholder="Enter Author" required>
+                                        </span>
+                                    </h4>
+                                    <h4><span class="real-price">Selling Price
+                                            <input type="text" class="form-control selling-price mt-2" name="sellPrice" placeholder="Enter Selling Price" required>
+                                        </span>
+                                        <span><del>Original Price
+                                            <input type="text" class="form-control ori-price mt-2" name="oriPrice" placeholder="Enter Original Price" required>
+                                        </del></span>
+                                    </h4>
+                                    <input type="text" class="form-control mt-2" name="headDescription" placeholder="Enter Book Head Description">
+                                    <input type="text" class="form-control mt-2" name="description" placeholder="Enter Book Description" required>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 text-center text-lg-left">
+                                <div class="container">
+                                        <div class="product-tags-list">
+                                            <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                    <li class="breadcrumb-item"><p class="d-inline"><span>
+                                                        <i class="ml-2">- Please check carefully the SKU because you can't change after you submit <br></i>
+                                                        {{!-- <i class="ml-2">- The SKU require 13 characters <br></i> --}}
+                                                        <input type="text" name="SKU" id="" placeholder="--SKU--" required>
+                                                    </span></p></li>
+                                                    <div class="form-group mx-3">
+                                                        <i style="color: red;" id="alert"><u>{{errorMes}}</u></i>
+                                                    </div>
+                                                    <li class="breadcrumb-item"><span class="d-inline">Categories: <br>
+                                                        <select name="category" id="" multiple size="8">
+
+                                                            {{!-- <option> ---</option> --}}
+                                                            <option value="Children Book"> Children's Book</option>
+                                                            <option value="Dictionary, Languages"> Dictionary & Languages</option>
+                                                            <option value="Science Fiction, Fantasy, Horror"> Science Fiction, Fantasy & Horror</option>
+                                                            <option value="Business, Finance, Management"> Business, Finance & Management</option>
+                                                            <option value="Personal Development"> Personal Development</option>
+                                                            <option value="Biography"> Biography</option>
+                                                            <option value="Education, Reference"> Education & Reference</option>
+                                                            <option value="Society, Social Sciences"> Society & Social Sciences</option>
+                                                            <option value="Health"> Health</option>
+                                                            <option value="Food, Drink"> Food & Drink</option>
+                                                            <option value="Mind, Body, Spirit"> Mind, Body & Spirit</option>
+                                                            <hr>
+                                                            <option value="Science, Geography"> Science & Geography</option>
+                                                            <option value="Art, Photography"> Art & Photography</option>
+                                                            <option value="Travel, Holiday Guides"> Travel & Holiday Guides</option>
+                                                            <option value="Medical"> Medical</option>
+                                                            <option value="Poetry, Drama"> Poetry & Drama</option>
+                                                            <option value="Religion"> Religion</option>
+                                                            <option value="Crafts And Hobbies"> Crafts And Hobbies</option>
+                                                            <option value="Home, Garden"> Home & Garden</option>
+                                                            <option value="History, Archaeology"> History & Archaeology</option>
+                                                            <option value="Computing"> Computing</option>
+                                                            <option value="Technology, Engineering"> Technology & Engineering</option>
+                                                            <hr>
+                                                            <option value="Entertainment"> Entertainment</option>
+                                                            <option value="Stationery"> Stationery</option>
+                                                            <option value="Natural History"> Natural History</option>
+                                                            <option value="Graphic Novels, Anime, Manga"> Graphic Novels, Anime & Manga</option>
+                                                            <option value="Sport"> Sport</option>
+                                                            <option value="Crime, Thriller"> Crime & Thriller</option>
+                                                            <option value="Reference"> Reference</option>
+                                                            <option value="Romance"> Romance</option>
+                                                            <option value="Humour"> Humour</option>
+                                                            <option value="Transport"> Transport</option>
+                                                        </select>
+                                                    </span></li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+
+                                        <div class="col-12 col-lg-9 mt-3">
+                                            <button type="submit" class="btn green-color-yellow-gradient-btn">
+                                                <i class="fa fa-check" aria-hidden="true"></i>    
+                                                ACCEPT
+                                            </button>
+                                        {{!-- <p class="pro-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p> --}}
+                                            {{!-- <button class="btn green-color-yellow-gradient-btn">
+                                                <i class="fa fa-check" aria-hidden="true"></i>    
+                                                ACCEPT
+                                            </button> --}}
+                                        </div>
+                                </div>
+
+                                <div class="product-checklist">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Satisfaction 100% Guaranteed</li>
+                                        <li><i class="fas fa-check"></i> Free shipping on orders over $99</li>
+                                        <li><i class="fas fa-check"></i> 14 days easy Return</li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="dropdown-divider"></div>
+                            </div>                    
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+</div>
+<!-- END HEADING SECTION -->
+
+{{#section 'js'}}
+    <!-- JavaScript -->
+    <script src="/js/bundle.min.js"></script>
+    <!-- Plugin Js -->
+    <script src="/js/jquery.fancybox.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/jquery.cubeportfolio.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/bootstrap-input-spinner.js"></script>
+    <script src="/js/parallaxie.min.js"></script>
+    <script src="/js/stickyfill.min.js"></script>
+    <script src="/js/nouislider.min.js"></script>
+    <!-- Custom Script -->
+    <script src="/js/script.js"></script>
+{{/section}}
