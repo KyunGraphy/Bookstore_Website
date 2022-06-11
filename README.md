@@ -354,6 +354,8 @@ Handlebars.js is a templating engine similar to the ejs module in node.js, but m
 <h3 id="testing">Testing</h3>
 In this chapter, we are using the template in the lab session to test all functions in our projects to make sure that all functions run smoothly.
 We have recorded testing process:
+
+[Testing](https://youtu.be/r3MaCJH52Ts)
 <h3 id="conclusion">Conclusion</h3>
 
 #### Accomplished Works
