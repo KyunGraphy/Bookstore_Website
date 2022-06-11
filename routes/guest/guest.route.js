@@ -47,7 +47,7 @@ route.post("/guestFilter", async function (req, res) {
   // Filter products
   const proList = await db.load(`SELECT * FROM books.book where sellPrice >= ${req.body.minPrice} and sellPrice <= ${req.body.maxPrice};`)
 
-  res.render("vwCustomer/products_customers", {
+  res.render("vwGuest/products_guest", {
     layout: "guestLay",
     title: "Products",
     proList,
@@ -98,10 +98,5 @@ route.get("/contact", async function (req, res) {
     topSeller
   });
 });
-
-route.post("/filter", function (req, res) {
-  console.log(req);
-  res.send("FILTER")
-})
 
 module.exports = route;
